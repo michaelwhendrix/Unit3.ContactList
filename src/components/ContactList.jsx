@@ -9,6 +9,7 @@ const dummyContacts = [
 
 export default function ContactList() {
     const [contacts, setContacts] = useState(dummyContacts);
+    console.log("Contacts:", contacts)
     return (
         <>
             <table>
