@@ -20,7 +20,7 @@ export default function ContactList() {
         }
         fetchContacts()
     },[])
-    return (
+    return ( 
         <>
             <table>
                 <thead>
@@ -39,7 +39,8 @@ export default function ContactList() {
                     })}
                 </tbody>
             </table>
-        </>
+        </> 
     )
+    
 }
 
