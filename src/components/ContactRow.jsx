@@ -1,11 +1,10 @@
-import {contacts} from "./ContactList"
 
-export default function ContactRow({contacts) {
+export default function ContactRow({contact}) {
     return (
             <tr>
-                <td>{contacts.name}</td>
-                <td>{contacts.phone}</td>
-                <td>{contacts.email}</td>
+                <td>{contact.name}</td>
+                <td>{contact.email}</td>
+                <td>{contact.phone}</td>
             </tr>
-    )
+            )
 }
