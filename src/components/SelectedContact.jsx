@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
-import ContactList from "./ContactList"
 
-export default function SelectedContact ({selectedContactId}) {
+export default function SelectedContact ({selectedContactId, setSelectedContactId}) {
     const [contact, setContact] = useState([{ id: 1, name: "R2-D2", phone: "222-222-2222", email: "r2d2@droids.com" }])
 
     useEffect(()=> {
@@ -19,7 +18,7 @@ export default function SelectedContact ({selectedContactId}) {
         <>
            <div>`Name: {contact.name}`</div>
            <div>`Email: {contact.email}`</div>
-           <button>Back</button>
+           <button onClick={() => {setSelectedContactId(null)}}>Back</button>
         </> 
     )
     
